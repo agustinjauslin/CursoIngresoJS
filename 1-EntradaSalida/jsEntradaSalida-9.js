@@ -3,7 +3,26 @@ transformarlo a entero (parseInt), luego
 mostrar el importe con un aumento del 10 %
 en el cuadro de texto "RESULTADO".*/
 function mostrarAumento()
-{
+{	
+	var sueldo;
+	var porcentaje;
+	var importe;
+	var resultado;
+
+	sueldo=document.getElementById('sueldo').value;
+	porcentaje=50;
+
+
+
+
+
+	importe=porcentaje/100;
+	aumento=sueldo*importe;
+	resultado=sueldo+aumento;
+
+	console.log(resultado);
+
+
 
 	
 }
