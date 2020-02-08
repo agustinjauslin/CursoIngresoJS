@@ -7,7 +7,7 @@ function mostrar()
 
 
 
-	apellido="perez";
+	apellido="Esto funciona de maravilla";
 	alert(apellido);
 	//alert("tal cual");//recibe textos literales y variables
 	//alert(apellido);//echo de valçriable apellido

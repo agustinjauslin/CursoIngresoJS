@@ -4,6 +4,16 @@
 */
 function mostrar()
 {
+	var nombre;
+	var nombre2;
+	nombre=	document.getElementById('elNombre').value;
+	nombre2=prompt("ingrese nombre");
+
+	nombre=nombre2;
+	console.log(nombre);
+
+	// no entendi la consigna
+
 
 }
 
