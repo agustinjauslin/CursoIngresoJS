@@ -8,7 +8,7 @@ function mostrar()
 
 
 	apellido="Esto funciona de maravilla";
-	alert(apellido);
+//testeando git
 	//alert("tal cual");//recibe textos literales y variables
 	//alert(apellido);//echo de valçriable apellido
 	//alert("apellido");//literalmente la palabra apellido
