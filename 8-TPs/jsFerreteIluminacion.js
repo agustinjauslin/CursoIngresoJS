@@ -33,7 +33,7 @@ function CalcularPrecio ()
 
 	lamparaValor=35;
 
-
+//dskaldksadskñ
 	//valores
 	if (cantidad>5) 
 	{
