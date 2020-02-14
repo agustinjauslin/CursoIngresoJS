@@ -15,13 +15,13 @@ edad=parseInt(edad);
 
 if (edad<13) 
 {
-	alert("es mayor");
+	alert("es niño");
 }
 else
 {
 	if (edad>17) 
 	{
-		alert("es un niño");
+		alert("es un adulto");
 	}
 	else
 	{
