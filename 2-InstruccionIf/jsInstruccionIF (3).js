@@ -33,3 +33,6 @@ else
 	alert("es menor de edad")
 }
 }//FIN DE LA FUNCIÓN
+
+
+//kldjsalkjdskajdsakldjslakdjsalkdjsalk
