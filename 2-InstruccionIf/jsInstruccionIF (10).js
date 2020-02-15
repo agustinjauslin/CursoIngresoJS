@@ -21,6 +21,22 @@ function mostrar()
 	numeroAleatorio=Math.floor((Math.random() * 10)+1);
 	console.log(numeroAleatorio);
 
+	if (numeroAleatorio>8) 
+	{
+			alert("EXCELENTE");
+	}
+	else
+	{
+			if (numeroAleatorio<4) 
+			{
+					alert("Vamos, la proxima se puede");
+			}
+			else
+			{
+					alert("APROBÓ");
+			}
+	}
+
 /*
 	//METODO 1
 
@@ -61,6 +77,7 @@ function mostrar()
 }
 */
 //METODO 3
+/*
 if (numeroAleatorio>8) {
 	alert("EXCELENTE");
 
@@ -73,7 +90,7 @@ else{
 		alert("APROBÓ");
 	}
 }
-
+*/
 
 }
 
