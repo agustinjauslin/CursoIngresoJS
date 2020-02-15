@@ -13,96 +13,99 @@ de ingresos brutos en informar del impuesto con el siguiente mensaje:
 
  */
 function CalcularPrecio () 
-{	//defino variables
+{	//VARIABLES
 	var cantidad;//cantidad
 	var marca;//marcas seleccionada
-	
 	var lamparaValor;//valor estandar 35$
 	var precioBruto;
 	var PrecioFinal;
 	var descuento;
-
-
-
-	//tomo valores
+	//VALORES
 	cantidad=document.getElementById('Cantidad').value;
 	cantidad=parseInt(cantidad);
 	marca=document.getElementById('Marca').value;
-
+	lamparaValor=35;
+	//CALCULOS
 	precioBruto=lamparaValor*cantidad;
 
-	lamparaValor=35;
-
-//dskaldksadskñ
-	//valores
-	if (cantidad>5) 
-	{
+if (cantidad>5)
+{
 		descuento=50;
-		
-	}
-	else
-	{
-			if (cantidad==5)
-			{
-					if (marca!="ArgentinaLuz")
-					{
+}
+else
+{
+		if (cantidad==5) 
+		{
+				if (marca=="ArgentinaLuz") 
+				{
 						descuento=40;
-					}
-					else
-					{
-					descuento=30;
-					}
+				}
+				else
+				{
+						descuento=30;
+				}
+		}
+		else
+		{
+				if (cantidad==4)
+				{
+						if ((marca=="ArgentinaLuz")||(marca=="FelipeLamparas"))
+						{
+								descuento=25;
+						}
+						else
+						{
+								descuento=20
+						}
 
-			}
-			else
-			{
-					if (cantidad==4)
-					{
-							if ((marca=="ArgentinaLuz")||(marca=="FelipeLamparas")) 
-							{
-									descuento=25
-							}
-							else
-							{
-									descuento=20;
-							}
-					}
 
-					else
-					{
-								if (cantidad==3)
+						
+				
+				
+				}		
+				else
+				{
+
+						if (cantidad==3)
+						{
+								if (marca=="ArgentinaLuz") 
 								{
-										if (marca=="ArgentinaLuz") 
+										descuento=15;
+								}
+								else
+								{
+										if (marca=="FelipeLamparas") 
 										{
-												descuento=15;
+												descuento=10;
 										}
-										}else
+										else
 										{
-												if (marca=="FelipeLamparas")
-												{
-														descuento=10;
-												}
-												else
-												{
-														descuento=5;
-												}
+												descuento=5;
 										}
-					}
-			}
-	}
+
+								
+								}
 
 
 
+						
+						
+						
+						}
+						else
+						{
+								descuento=0;
+						}
+				
+				}
+		
+		}
+}
+precioFinal=precioBruto-precioBruto*(descuento/100);
+document.getElementById('precioDescuento').value=precioFinal;
 
 
-
-
-	
-			precioFinal=precioBruto-precioBruto*(descuento/100);
-			document.getElementById('precioDescuento').value=precioFinal;
-
-
-
+}
 
 
 

@@ -15,6 +15,6 @@ function comenzar()
 }//FIN DE LA FUNCIÓN
 function Responder()
 {
-	alert("AFA");
+
 
 }//FIN DE LA FUNCIÓN
