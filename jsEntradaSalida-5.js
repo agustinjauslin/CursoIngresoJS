@@ -13,4 +13,4 @@ function mostrar()
 	console.log("Usted se llama "+nombre+" y tiene "+edad);
 	alert("Usted se llama "+nombre+" y tiene "+edad);
 }
-
+//douuuu
