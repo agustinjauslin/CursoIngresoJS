@@ -21,6 +21,12 @@ function mostrar()
 
 		numeroIngresado=prompt("ingrese un numero");
 		numeroIngresado=parseInt(numeroIngresado);
+				while(isNaN(numeroIngresado))//valida si ingresa algo que no sea un numero
+				{
+				numeroIngresado=prompt("error solo se aceptan numeros");
+				numeroIngresado=parseInt(numeroIngresado);
+				
+				}
 		acumulador=acumulador+numeroIngresado;
 	}
 
