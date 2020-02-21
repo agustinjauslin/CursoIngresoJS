@@ -2,15 +2,18 @@
 {
 
 var sexo;
-sexo = prompt("ingrese f ó m .");
+sexo=prompt("ingrese su sexo(f ó m)");
 
+while(sexo!='m' && sexo!='f')
+{		
+	console.log("invalido")
+	sexo=prompt("ingrese un valor valido");
 
-
-while(sexo!="m" || sexo!="f")
-{
-		sexo = prompt("ingrese f ó m por favor");
 }
+
+console.log(sexo);
 document.getElementById('Sexo').value=sexo;
-alert("fin");
+
+
 
 }//FIN DE LA FUNCIÓN

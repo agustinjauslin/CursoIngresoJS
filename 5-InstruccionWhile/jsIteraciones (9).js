@@ -1,13 +1,23 @@
 function mostrar()
 {
 
-	var contador=0;
+	var contador;
+	var numeromax;
+	var numeromin;
+	var valoringresado;
+
+
+
+
 	// declarar variables
 	
 	var respuesta='si';
 
 	while(respuesta!='no')
 	{
+		valoringresado=prompt("ingrese un valor"); 
+		valoringresado=parseInt(valoringresado);
+
 		
 	
 	}
