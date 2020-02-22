@@ -17,29 +17,25 @@ function mostrar()
 	acumuladornegativo=1;
 
 
-
-
-	while(respuesta=="si")
+	while(respuesta!="detener")
 	{
+			valorIngresado=prompt("ingresar un numero");
+			valorIngresado=parseInt(valorIngresado);
+			while(isNaN(valorIngresado))
+			{
+					valorIngresado=prompt("debes ingresar un numero(no una letra)");
+					valorIngresado=parseInt(valorIngresado);	
+			}
+			if (valorIngresado>0) 
+			{
+					acumuladorpositivo=acumuladorpositivo+valorIngresado;
+			}
+			if(valorIngresado<0)
+			{
+					acumuladornegativo=acumuladornegativo*valorIngresado;
+			}
 
-		valorIngresado=prompt("ingrese un valor");
-		valorIngresado=parseInt(valorIngresado);
-
-
-
-
-		if (valorIngresado>0) 
-		{
-			acumuladorpositivo=acumuladorpositivo+valorIngresado;
-	
-		}
-		else
-		{
-			acumuladornegativo=acumuladornegativo*valorIngresado;
-
-		}
-		//reformula la condicion para continuar(si usuario escribe "si")
-		respuesta=prompt("ingrese si para continuar");
+			respuesta=prompt("escribir detener para finalizar el programa");		
 	}
 
 document.getElementById('suma').value=acumuladorpositivo;
