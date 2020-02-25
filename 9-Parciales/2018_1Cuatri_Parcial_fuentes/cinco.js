@@ -4,6 +4,7 @@ function mostrar()
 	planeta=prompt("ingrese un planeta del sistema solar");
 
 
+
 	switch(planeta)
 	{
 		case "mercurio":
@@ -24,7 +25,7 @@ function mostrar()
 			break;
 
 		default:
-			alert("no es un planeta valido");
+			alert("no es un planeta valido,recuerde que los planetas deben ser escritos en muniscula y sin tildes(ej:mercurio,venus,tierra,marte,jupiter,saturno,urano,neptuno,pluton)");
 			break;		
 	}
 
