@@ -2,6 +2,11 @@ function mostrar()
 {
 	var planeta;
 	planeta=prompt("ingrese un planeta del sistema solar");
+	while(!(planeta=='mercurio'||planeta=='venus'||planeta=='tierra'||planeta=='marte'||planeta=='jupiter'||planeta=='saturno'||planeta=='urano'||planeta=='neptuno'||planeta=='pluton'))
+	{
+		planeta=prompt("ingrese un planeta del sistema solar(2)");
+	}
+
 
 
 
