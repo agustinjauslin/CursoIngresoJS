@@ -141,10 +141,7 @@ respuesta=true;
 					}
 			}
 			
-			if (contadorQR>contadorEfectivo&&contadorQR>contadorTarjeta) 
-			{
-					mejorFormaPago='QR'
-			}
+
 			promedioDias=sumaDiasReserva/contadorReserva;
 document.write("el huésped que trajo más personas en una sola reserva."+maxCantidadPersonasNombre+"<br>")
 document.write("la cantidad de personas que se quedaron más días"+maxCantidadDiasPersonas+"<br>");

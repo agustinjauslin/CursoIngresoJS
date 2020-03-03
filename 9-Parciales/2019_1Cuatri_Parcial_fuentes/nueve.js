@@ -1,6 +1,7 @@
 /*
 a.de la temp mas alta el nombre y el sexo
-b. si tiene mas de 38 de temperatura y es un niño(<12) o mayor de edad(>60)mensaje "riesgo" con nombre
+b. si tiene mas de 38 de temperatura y es un niño(<12) o 
+mayor de edad(>60)mensaje "riesgo" con nombre
 c.temperatura del mas joven/del mas viejo
 d.promedio de edad/total y por mujeres
 */
@@ -128,7 +129,7 @@ function mostrar()
 
 	}
 	promedio=suma/contador;
-	promedioMujeres=sumaMujeres/contadorMujeres
+	promedioMujeres=sumaMujeres/contadorMujeres;
 
 	document.write("a. la persona con maxima temperatura es "+nombreMaxTemp+" y su sexo es "+sexoMaxTemp+"<br>");
 	document.write("b. la temperatura del mas joven es de "+temperaturaJoven+" y la temperatura del mas viejo es "+temperaturaViejo+"<br>");
