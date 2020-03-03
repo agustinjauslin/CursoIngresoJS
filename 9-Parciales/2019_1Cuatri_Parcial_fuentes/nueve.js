@@ -56,7 +56,7 @@ function mostrar()
 
 			edad=prompt("ingrese su edad");
 			edad=parseInt(edad);
-			while(edad<1||edad>100)
+			while(edad<1||edad>100||isNaN(edad))
 			{
 					edad=prompt("reingrese su edad");
 					edad=parseInt(edad);
@@ -65,7 +65,7 @@ function mostrar()
 
 			temperatura=prompt("ingrese su temperatura corporal");
 			temperatura=parseInt(temperatura);
-			while(temperatura<34||temperatura>42)
+			while(temperatura<34||temperatura>42||isNaN(temperatura))
 			{
 					temperatura=prompt("ingrese su temperatura corporal");
 					temperatura=parseInt(temperatura);
